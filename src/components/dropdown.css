@@ -1,0 +1,104 @@
+.token-select {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(76, 130, 251);
+    opacity: 1;
+    box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: unset;
+    border-radius: 16px;
+    outline: none;
+    user-select: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 400;
+    width: initial;
+    padding: 6px 6px 6px 8px;
+    gap: 8px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-left: 12px;
+    visibility: visible;
+}
+
+.token-select-box,
+.token-select-active-box {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.select-token-box,
+.active-token {
+    display: flex;
+    padding: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    
+}
+
+.select-token-text,
+.active-token-name {
+    margin: 0px 0.25rem;
+    font-size: 20px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.dropdown-icon {
+    margin: 0px 0.25rem 0px 8px;
+    height: 35%;
+}
+
+.token-select-active {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #65cdee;
+    opacity: 1;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: unset;
+    border-radius: 16px;
+    outline: none;
+    user-select: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 400;
+    width: 3em;
+    padding: 4px 8px 4px 4px;
+    gap: 8px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-left: 12px;
+    visibility: visible;
+}
+
+.active-token-icon {
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(white 50%, rgba(255, 255, 255, 0) calc(75% + 1px), rgba(255, 255, 255, 0) 100%);
+    border-radius: 50%;
+    border: 0px solid rgba(255, 255, 255, 0);
+    box-shadow: white 0px 0px 1px;
+    margin-right: 2px;
+}
+
+.token-select::before,
+.token-select-active::before {
+    background-size: 100%;
+    border-radius: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
